@@ -1,0 +1,100 @@
+<?xml version="1.1" encoding="windows-1252"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw"
+    version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="joinedLines" id="id9302265">
+            <polyline points="160.0,300.0 460.0,300.0 "
+                stroke-width="2.0" stroke="black"
+                latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-9302265)"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id15979235">
+            <polyline points="560.0,220.0 560.0,40.0 "
+                stroke-width="2.0" stroke="black"
+                latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-15979235)"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id17971365">
+            <polyline points="560.0,220.0 800.0,220.0 "
+                stroke-width="2.0" stroke="black"
+                latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-17971365)"/>
+        </g>
+        <g latexdraw:type="text" id="id7633504" fill="black" latexdraw:position="bl">
+            <text x="800.0" y="240.0">$x$</text>
+        </g>
+        <g latexdraw:type="text" id="id1969627" fill="black" latexdraw:position="bl">
+            <text x="540.0" y="40.0">$y$</text>
+        </g>
+        <g latexdraw:type="text" id="id14798181" fill="black" latexdraw:position="bl">
+            <text x="220.0" y="320.0">$a$</text>
+        </g>
+        <g latexdraw:type="text" id="id18460626" fill="black" latexdraw:position="bl">
+            <text x="340.0" y="320.0">$b$</text>
+        </g>
+        <g latexdraw:type="text" id="id14911046" fill="black" latexdraw:position="bl">
+            <text x="380.0" y="180.0">$\gamma$</text>
+        </g>
+        <g latexdraw:type="text" id="id30740827" fill="black" latexdraw:position="bl">
+            <text x="760.0" y="140.0">$\gamma(I)$</text>
+        </g>
+        <g latexdraw:type="bezierCurve" id="id9392615">
+            <path
+                d="M 680.0 200.0 C 580.0 220.0 580.0 200.0 580.0 160.0 C 580.0 120.0 620.0 100.0 660.0 120.0 C 700.0 140.0 700.0 160.0 740.0 140.0 C 780.0 120.0 760.0 60.0 720.0 60.0 "
+                stroke-width="2.0" stroke="black" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id13322814" fill="black" latexdraw:position="bl">
+            <text x="219.99999999999955" y="309.62962962962956">$($</text>
+        </g>
+        <g latexdraw:type="text" id="id27718911" fill="black" latexdraw:position="bl">
+            <text x="336.29629629629653" y="310.37037037037044">$)$</text>
+        </g>
+        <g latexdraw:type="bezierCurve" id="id4256980">
+            <path
+                d="M 321.48148148148147 265.18518518518516 C 321.35925160061186 265.71592669179086 397.4072323036256 185.68481912681113 440.7407407407407 160.74074074074073 C 484.0742491778558 135.79666235467033 504.69300503314946 145.86349906249848 529.6296296296296 151.85185185185185 "
+                stroke-width="2.0" stroke="black" fill="none"
+                latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-4256980)"/>
+        </g>
+    </g>
+    <defs>
+        <marker overflow="visible" orient="auto" id="arrow1-9302265">
+            <path
+                d="M 0.0 0.0 L -4.652083333333334 1.6614583333333335 L -4.652083333333334 0.0 L -4.652083333333334 -1.6614583333333335 z "
+                latexdraw:arrSizeNum="2.0" fill="black"/>
+        </marker>
+        <marker overflow="visible" orient="auto" id="arrow1-15979235">
+            <path
+                d="M 0.0 0.0 L -4.652083333333334 1.6614583333333335 L -4.652083333333334 0.0 L -4.652083333333334 -1.6614583333333335 z "
+                latexdraw:arrSizeNum="2.0" fill="black"/>
+        </marker>
+        <marker overflow="visible" orient="auto" id="arrow1-17971365">
+            <path
+                d="M 0.0 0.0 L -4.652083333333334 1.6614583333333335 L -4.652083333333334 0.0 L -4.652083333333334 -1.6614583333333335 z "
+                latexdraw:arrSizeNum="2.0" fill="black"/>
+        </marker>
+        <marker overflow="visible" orient="auto" id="arrow1-4256980">
+            <path
+                d="M 0.0 0.0 L -4.652083333333334 1.6614583333333335 L -4.652083333333334 0.0 L -4.652083333333334 -1.6614583333333335 z "
+                latexdraw:arrSizeNum="2.0" fill="black"/>
+        </marker>
+    </defs>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:latexIncludes>\usepackage{amssymb}</latexdraw:latexIncludes>
+            <latexdraw:displayXScale>true</latexdraw:displayXScale>
+            <latexdraw:displayYScale>true</latexdraw:displayYScale>
+            <latexdraw:unit>CM</latexdraw:unit>
+            <latexdraw:zoom>1.35</latexdraw:zoom>
+            <latexdraw:magneticGridStyle>CUSTOMISED</latexdraw:magneticGridStyle>
+            <latexdraw:gridGap>20</latexdraw:gridGap>
+            <latexdraw:magneticGrid>false</latexdraw:magneticGrid>
+            <latexdraw:version>3.3.8</latexdraw:version>
+            <latexdraw:size>
+                <latexdraw:width>1034</latexdraw:width>
+                <latexdraw:height>833</latexdraw:height>
+            </latexdraw:size>
+            <latexdraw:position>
+                <latexdraw:x>486.0</latexdraw:x>
+                <latexdraw:y>124.0</latexdraw:y>
+            </latexdraw:position>
+        </latexdraw:metadata>
+    </metadata>
+</svg>
