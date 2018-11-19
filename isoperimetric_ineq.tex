@@ -167,10 +167,9 @@ A plane curve is a continuous function $\gamma: I \rightarrow \mathbb{R}^2$, $\g
 \begin{figure}[htbp] 
   \centering
      \includegraphics[width=0.8\textwidth]{images/curve.pdf}
-  \caption{plane curve.}
+  \caption{plane curve}
   \label{fig:Bild2}
 \end{figure}
-\\
 \noindent We'll now state some basic but crucial definitions concerning plane curves.
 
 \begin{definition}
@@ -345,14 +344,14 @@ Now
 \begin{align*}
 \frac{l^2}{2\pi} = \int_0^{2\pi}f'(t)^2+g'(t)^2dt = \int_0^{2\pi}|\gamma'(t)|^2dt.
 \end{align*}
-Now we know that the area $A$ bounded by $\gamma$ is equal to $\int_0^{2\pi}g'(t)f(t)dt$. This gives us 
+We know that the area $A$ bounded by $\gamma$ is equal to $\int_0^{2\pi}g'(t)f(t)dt$. This gives us 
 \begin{align*}
 l^2 - 4\pi A 
 &= 2\pi\int_0^{2\pi}f'(t)^2+g'(t)^2 - 2g'(t)f(t)dt \\
 &= 2\pi\int_0^{2\pi}f'(t)^2 + g'(t)^2 - 2g'(t)f(t) +f(t)^2-f(t)^2dt \\
 &= 2\pi\int_0^{2\pi}f'(t)^2-f(t)^2dt + 2\pi\int_0^{2\pi}(g'(t)-f(t))^2dt \geq 0
 \end{align*}
-where the first integral in the last term is non-negative by \textit{Wirtinger's inequality} for the function $f(t)$ , and the integrand of the second integral is non-negative. $\\ \\
+where the first integral in the last term is non-negative by \textit{Wirtinger's inequality} for the function $f(t)$, and the integrand of the second integral is non-negative. $\\ \\
 $
 Equality holds if and only if $f(t)=a\sin(t-t_0)$ and $g' = f$, so $g(t)= -a\cos(t-t_0)+c$. Since $\sqrt{f'(t)^2+g'(t)^2} = \frac{l}{2\pi}$, so $\gamma$ is a circle with centre $(0,c)$ and radius $\frac{l}{2\pi}$.
 \end{proof}
@@ -436,12 +435,12 @@ Let us now work towards a proof of theorem \ref{T1Ref}.
 Recall that we assume that  $K \subset \mathbb{R}^n$ is a domain with sufficiently smooth surface structure $\partial K$. We introduce some relevant notation and terminology. For the sake of simplicity, we use terminology familiar to $\mathbb{R}^3$, namely "volume" for $n$-volume, "area" for $(n-1)$-volume, and "perimeter" or "length" for $(n-2)$-volume. Let $\partial K$ denote the surface of some domain $K \subset \mathbb{R}^n$.
 \\\\
 For each $t \in \mathbb{R}$ let $A(t)$ be the area of the planar slice $K \cap \{x_n = t\}$ where $x_n$ denotes the $x_n$-axis. Let $P(t)$ be its perimeter, that is the length of $\partial K \cap \{x_n=t\}$. Since $\partial K$ is smooth, the derivative of $A$ is well-defined, in fact, $A$ is continuously-differentiable and thus even Lipschitz continuous, since it's enough to consider $A$ on a compact interval $[t_1,t_2]$ where $t_1,t_2$ are the lowest respectively highest values of $\partial K$ with respect to $x_n$. 
-\begin{proposition} \label{P1} Under the assumptions above, the following identity holds:
+\begin{proposition}[Academic formula for surface area] \label{P1} Under the assumptions above, the following identity holds:
 \begin{align*}
 | \partial K| = \int \sqrt{P(t)^2 + A'(t)^2}dt.
 \end{align*}
 \end{proposition}
-\noindent The above proposition will be crucial when we want to discuss a prove of theorem \ref{T1}. However, in order to establish a proof of proposition \ref{P1}, a possible route is to work via geometric measure theory. In fact, the above result can be derived from the area formula of geometric measure theory. 
+\noindent The above proposition will be crucial when we want to discuss a proof of theorem \ref{T1}. However, in order to establish a proof of proposition \ref{P1}, a possible route is to work via geometric measure theory. In fact, the above result can be derived from the area formula of geometric measure theory. 
 %reference: https://www.encyclopediaofmath.org/index.php/Area_formula#General_statement 
 \begin{thm}[Area formula] Consider a Lipschitz map $f: \mathbb{R}^n \to \mathbb{R}^m$, where $n \leq m$. Let $Jf(y):= \sqrt{ \det[(Df|_y)^\text{tr} \cdot (Df|_y)]}$ where $Df|_y$ denotes the Jacobian matrix of $f$ at $y \in \mathbb{R}^n$ and $-^\text{tr}$ denotes the transpose. For any Lebesgue measurable set $A \subset \mathbb{R}^n$, the map $z \mapsto f^{-1}( \{z\})$ is $\mathcal{H}^n$-measurable, where $\mathcal{H}^n$ is the $n$-dimensional Hausdorff measure, and the following identity holds
 \begin{align*}
@@ -455,7 +454,7 @@ For each $t \in \mathbb{R}$ let $A(t)$ be the area of the planar slice $K \cap \
 \item For $n$ being an integer, in any metric space $(X,d)$ and for any set $E \subset X$, $\mathcal{H}^0(E)$ equals the cardinality of $E$ if $E$ is a finite set and it equals infinity if not, thus $\mathcal{H}^0$ is called the counting measure. 
 \end{enumerate} 
 \end{remark}
-Corollary to the Area formula we immediately get
+\newpage
 \begin{corollary}[Area formula II]If $f: \mathbb{R}^n \to \mathbb{R}^m$ for $n \leq m$ is a Lipschitz injective map and $A \subset \mathbb{R}^n$ is a Lebesgue measurable set (with finite Lebesgue measure), then 
 \begin{align*}
 \mathcal{H}^n (f(A)) = \int_A Jf(y)dy
@@ -463,7 +462,7 @@ Corollary to the Area formula we immediately get
 \end{corollary} 
 \begin{remark} The one-dimensional Hausdorff measure $\mathcal{H}^1$ of a simple curve in $\mathbb{R}^k$ (i.e. $f: \mathbb{R} \to \mathbb{R}^k$ is injective) is equal to the length of the curve. 
 \end{remark}
-\begin{proof}[Proof of proposition \ref{P1} via Area formula II] \ \newline  Let $n=1,m=2$, and $A= [t_1,t_2] \subset \mathbb{R}$ which is of course Lebesgue measurable of finite measure. Define $f: \mathbb{R} \to \mathbb{R}^2 $ as 
+\begin{proof}[Proof of proposition \ref{P1} via Area formula II]  \ \newline Let $n=1,m=2$, and $A= [t_1,t_2] \subset \mathbb{R}$ which is of course Lebesgue measurable of finite measure. Define $f: \mathbb{R} \to \mathbb{R}^2 $ as 
 \begin{align*}
 f(t):= \begin{pmatrix}
  \int_{t_1}^t P(s) ds \\ A(t)
@@ -471,15 +470,14 @@ f(t):= \begin{pmatrix}
 \end{align*}
 Clearly $f$ is Lipschitz, since its entries are both Lipschitz. Indeed, $A$ is continuously differentiable with bounded derivative (viewed on the compact interval $[t_1,t_2]$) hence Lipschitz, and $\int_{t_1}^t P(s)ds$ is Lipschitz because $P$ is bounded. Conclude that $f$ is Lipschitz by choosing the taxicab norm (all norms are equivalent on $\mathbb{R}^n$). Moreover, $f$ is injective because $g(t):= \int_{t_1}^t P(s)ds$ is injective as a continuous, strictly monotone increasing function. Furthermore  $Jf(t)= \sqrt{ P(t)^2 + A'(t)^2}$ and thus we recreated the RHS of proposition \ref{P1}.
 \\\\
-By the Area formula II we obtain 
+Moreover, we notice that $f([t_1,t_2])= \widetilde{K} \subset \mathbb{R}^2$ is such that $\lambda_2(\widetilde{K})= |\widetilde{K}|=|K|= \lambda_n(K)$ and $\mathcal{H}^1( \widetilde{K})= | \partial \widetilde{K}| = | \partial K|= \mathcal{H}^{n-1}(K)$. By the Area formula II we obtain 
 \begin{align*}
- \int_{t_1}^{t_2}  \sqrt{ P(t)^2 + A'(t)^2 } dt = \mathcal{H}^1 (f([t_1,t_2]) = | \partial K|.
+ \int_{t_1}^{t_2}  \sqrt{ P(t)^2 + A'(t)^2 } dt = \mathcal{H}^1 (f([t_1,t_2]))= \mathcal{H}^1(\widetilde{K})= | \partial \widetilde{K}|= | \partial K|.
 \end{align*}
-Where we used that $f$ gives a parametrisation of the surface $\partial K$. 
 \end{proof}
 Although the proof given above is short, it is nevertheless still technically quite involved. In particular we've used an advanced theorem from geometric measure theory whose proof is way beyond the scope of this discussion. 
 \\\\
-The interested student might find it to be a fruitful problem (for instance for a bachelor thesis) in proving a \textit{smooth version} (i.e. for smooth $f$) of the area formula by the means of multivariable calculus and then apply said version to establish a proof of Proposition \ref{P1} again. 
+The interested student might find a fruitful problem in proving a \textit{smooth version} (i.e. for smooth $f$) of the area formula by the means of multivariable calculus in order to establish a proof of Proposition \ref{P1}. 
 \\\\
 Due to the abstract nature of the proof presented above, we will also briefly discuss an outline of a possible proof given by Gary Lawlor in his print \textit{An elementary isoperimetric proof in $n$-space} 2010. \newpage
 \begin{proof}[Outline of a proof of proposition \ref{P1}] The proof given in [G1] goes as follows: \\
@@ -537,7 +535,7 @@ By differentiation we immediately get:
 A(t) = \frac{|B_{n-1}|}{r^{n-1}} (r^2-h(t)^2)^\frac{n-1}{2} h'(t).
 \end{align*}
 \end{corollary}
-We are now in a good position to give a proof of Theorem \ref{T1Ref}. The proof we give follows the arguments presented by Gary Lawlor in his 2010 print \textit{An elementary isoperimetric proof in $n$-space} which is in fact a proof by induction over the dimension $n$ of $\mathbb{R}^n$. 
+We are now in a good position to give a proof of Theorem \ref{T1Ref}. The proof we give is a modification of the one presented by Gary Lawlor in his 2010 print \textit{An elementary isoperimetric proof in $n$-space}, which is in fact a proof by induction over the dimension $n$ of $\mathbb{R}^n$. 
 \begin{proof}[Proof of Theorem \ref{T1Ref}] We proceed by induction over the dimension $n$ of $\mathbb{R}^n$. For $n=1$, we've already established the claim in remark \ref{R1}.1. Moving up a dimension, let us assume that
 \begin{align*}
 \frac{(n-1)|B_{n-1}|}{r'} \leq | \partial K|
@@ -547,32 +545,32 @@ As already discussed in remark \ref{R1}.3. we can choose $r$ such that $|B_n|=|K
 \begin{align*}
 | \partial B_n| \leq | \partial K|.
 \end{align*}
-Corollary \ref{C1} guarantees the existence of a differentiable function $h: \mathbb{R} \to [-r,r]$ such that 
-\begin{align*}
+Corollary \ref{C1} guarantees the existence of a differentiable function $h: [t_1,t_2]\to [-r,r]$ such that 
+\begin{align*}\label{eq:1}
 A(t) = \frac{|B_{n-1}|}{r^{n-1}} (r^2-h(t)^2)^\frac{n-1}{2} h'(t).
-\end{align*}
+\end{align*} 
 Defining $f(t):= h'(t)^{-\frac{1}{n-1}}$ establishes that
 \begin{align*}
 f(t)^{n-1}h'(t)=1.
 \end{align*}
 Moreover, both $f$ and $h'$ are nonnegative as is easily seen by the formulas above and thus, by the AM-GM inequality, we get
-\begin{align*}
+\begin{align}
 (n-1)f(t)+h'(t) \geq n \sqrt[n]{f(t)^{n-1}h'(t)}=n.
-\end{align*}
+\end{align}
 Next, we apply the Cauchy-Schwarz inequality $( \langle u ,v \rangle \leq | \langle u,v \rangle| \leq \|u\| \|v\|$) to the vectors
 \begin{align*}
-u = \binom{P(t)}{A'(t)}, \ v= \binom{ \sqrt{r^2-h(t)^2}}{-h(t)}
+u := \binom{P(t)}{A'(t)}, \ v:= \binom{ \sqrt{r^2-h(t)^2}}{-h(t)}
 \end{align*}
 to establish 
 \begin{align*}
- \langle u, v \rangle= P(t) \sqrt{r^2-h(t)^2} - A'(t)h(t) \leq \|v\| \|u\| = r \sqrt{P(t)^2+A'(t)^2}
+ \langle u, v \rangle= P(t) \sqrt{r^2-h(t)^2} - A'(t)h(t) \leq \|v\| \|u\| = r \sqrt{P(t)^2+A'(t)^2}.
 \end{align*}
 \newpage
 Thus 
 \begin{align} \label{eq1}
 \sqrt{P(t)^2 +A'(t)^2} \geq  \frac{1}{r}P(t)\sqrt{r^2-h(t)^2} - \frac{1}{r}A'(t)h(t) 
 \end{align}
-Let us recall our induction hypothesis, for any surface in $\mathbb{R}^{n-1}$ which has the same volume as round sphere $B_{n-1}$ of radius $r$, the surface area $S$ satisfies 
+Let us recall our induction hypothesis, for any surface in $\mathbb{R}^{n-1}$ which has the same volume as the sphere $B_{n-1}$ of radius $r$, the surface area $S$ satisfies 
 \begin{align*}
 S \geq \frac{(n-1)|B_{n-1}|}{r}.
 \end{align*}
@@ -592,10 +590,10 @@ Bringing this together we have shown that
 \begin{align}
 P(t) \geq \frac{(n-1)A(t)f(t)}{\sqrt{r^2-h(t)^2}}. \label{eq2}
 \end{align}
-Using (\ref{eq2}) to further estimate (\ref{eq1}) we get 
+Using (\ref{eq:1}) and (\ref{eq2}) to further estimate (\ref{eq1}) we get 
 \begin{align} \label{eq3}
 \sqrt{P(t)^2 +A'(t)^2} &\geq  \frac{1}{r} \left[ (n-1)A(t)f(t) - A'(t)h(t) \right] \notag \\
-& \geq \frac{1}{r}\left[ A(t)(n-h'(t))- A'(t)h(t) \right] \notag \\
+& \geq \frac{1}{r}\left[ A(t)(n-h'(t))- A'(t)h(t) \right] \notag  \\
 &= \frac{1}{r} \left[ nA(t)- (h'(t)A(t)+A'(t)h(t)) \right] \notag \\
 &= \frac{1}{r} \left[ nA(t) - (h(t)A(t))'\right]
 \end{align}
